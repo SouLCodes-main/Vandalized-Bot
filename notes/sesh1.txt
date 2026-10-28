@@ -1,0 +1,2 @@
+Ok so the intial bot is up. We need to remove the on_message method after debugging. 
+Rest the current prefix for commands is "!" and the only added command right now is "!Vandalized"
