@@ -1,0 +1,6 @@
+Version 1.1.3 is the first working deployment.
+The roast command finally works and generates before getting timed out.
+ADDED: A fake web server for render to deploy via render's web service option (BG worker was paid)
+
+NEXT STEP:
+Add more functions (eg. retreieval of stats from a recent matches)
