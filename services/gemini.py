@@ -38,7 +38,7 @@ async def gen_roast(name: str, tag: str, region: str = "ap"):
     try:
         response = await asyncio.wait_for(
             client.aio.models.generate_content(
-                model='gemini-3.8-flash',
+                model='gemini-3.5-flash-lite',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=(
@@ -48,7 +48,6 @@ async def gen_roast(name: str, tag: str, region: str = "ap"):
                         "actionable mechanical advice. "
                         "CRITICAL RULE: Keep your entire response under 1500 characters and no more than 3 paragraphs."
                     ),
-                    temperature=0.8,
                     max_output_tokens=300,
                 )
             ),
