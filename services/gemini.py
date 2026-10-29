@@ -52,7 +52,7 @@ async def gen_roast(name: str, tag: str, region: str = "ap"):
                     max_output_tokens=300,
                 )
             ),
-            timeout=8.0  # Absolute hard kill after 8 seconds
+            timeout=30.0  # Absolute hard kill after 8 seconds
         )
         return response.text
         
