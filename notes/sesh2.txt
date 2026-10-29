@@ -1,0 +1,6 @@
+Ok so the gemini client is now running 3.8-flash agent to get the prompt and respond with a roast.
+Also setting up the valorant api was a piece of cake, took like only 5 minutes or so.
+
+NEXT STEPS:
+Make a bot command that takes user in-game name, tag and pass it to gemini response function. 
+Gemini first calls valorant api to fetch recent 3 matches and roasts the player.
