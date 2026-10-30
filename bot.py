@@ -44,7 +44,6 @@ async def roast(ctx, name: str = None, tag: str = None):
         try:
             out = await gen_roast(name, tag, "ap")
             
-            # Slice the output into 2000-character chunks to avoid the Discord limit
             chunk_size = 2000
             for i in range(0, len(out), chunk_size):
                 await ctx.send(out[i:i+chunk_size])
